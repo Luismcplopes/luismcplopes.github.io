@@ -1,6 +1,6 @@
 sudo: true
 dist: trusty
-language: html
+
 
 language: python
 python:
@@ -8,7 +8,7 @@ python:
   
 notifications: 
   email: true
-  slack: ${GH_TOKEN}
+  slack: ${SLACK_TOKEN}
     on_success: always # default: change 
     on_failure: always # default: always  
 
@@ -16,6 +16,6 @@ notifications:
   email: true
   slack:
     rooms:
-      - ${GH_TOKEN}
+      - ${SLACK_TOKEN}
     on_success: change # default: always
     on_failure: always # default: always  
